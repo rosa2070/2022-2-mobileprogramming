@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             canvas.drawColor(Color.LTGRAY);
             Paint p = new Paint();
             p.setColor(Color.BLUE);
+            // x, y, 반지름
             canvas.drawCircle(100, 100, 80, p);
 
 
