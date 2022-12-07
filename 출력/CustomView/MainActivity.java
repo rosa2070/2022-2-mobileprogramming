@@ -1,4 +1,5 @@
-package org.techtown.app2;
+// 원그리기
+package org.techtown.customview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         MyView v = new MyView(this);
         setContentView(v);
-
     }
 
     class MyView extends View {
@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
             canvas.drawColor(Color.LTGRAY);
             Paint p = new Paint();
             p.setColor(Color.BLUE);
-            canvas.drawLine(20, 10, 100, 50, p);
+            canvas.drawCircle(100, 100, 80, p);
+
+
         }
     }
 }
