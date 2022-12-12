@@ -16,6 +16,7 @@ public class SubActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         if (view.getId() == R.id.exit)
+            // finish 후에는 조금전에 호출한 MainActivity
             finish();
     }
 }
